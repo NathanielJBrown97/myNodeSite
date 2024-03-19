@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMP NAV VIEW - Choose Who Logged In</title>
+    <link href="../../css/index.css" type="text/css" rel="stylesheet">
+    <link href="../../css/studentTasks.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/countdown.js"></script>
+    <script src="../../data/tempAjaxLoader.js"></script>
+
+    <!-- Temp styling infile; as this page won't exist in the end -->
+    <style>
+        .view-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .view-box {
+            width: 200px;
+            height: 200px;
+            background-color: navy;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .view-box h2 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .view-box a {
+            display: inline-block;
+            background-color: gold;
+            color: navy;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .view-box a:hover {
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- NAVIGATION -->
+    <div class="top-bar">
+        <a href="../../index.html" class="logo"><img src="../../images/LeeTutoringLogoTransparentSmall.webp" alt="Tutoring Company Logo"></a>
+        <div class="countdown" id="SATcountdown">SAT</div>
+        <div class="countdown" id="ACTcountdown">ACT</div>
+        <div class="navigation">
+            <a href="../about.html">About Us</a>
+            <div class="dropdown">
+                <span>Services</span>
+                <div class="dropdown-content">
+                    <a href="../services/act.html">ACT Prep</a>
+                    <a href="../services/sat.html">SAT Prep</a>
+                    <a href="../services/math.html">Math Tutoring</a>
+                    <a href="../services/ap.html">AP Tutoring</a>
+                </div>
+            </div>
+            <a href="../contact.html">Contact</a>
+            <a href="../../index.html" class="login-button">Sign Out</a>
+        </div>
+    </div>
+
+
+    <!-- Temporary Containers for Navigation to different account views -->
+    <div class="view-container">
+        <div class="view-box">
+            <h2>Parent View</h2>
+            <a href="parentSchedule.html">Go</a><br>
+            <button id="loadHtmlBtn">HTML: What's this do?</button>
+        </div>
+        <div id="htmlContent"></div>
+        <div class="view-box">
+            <h2>Student View</h2>
+            <a href="studentTasks.html">Go</a><br>
+            <button id="loadJsonBtn">JSON: What's This Do?</button>
+        </div>
+        <div id="jsonContent"></div>
+        <div class="view-box">
+            <h2>Admin View</h2>
+            <a href="#">Go</a><br>
+            <button id="loadJqueryContentBtn">Jquery: What's This Do?</button>
+        </div>
+        <div id="jqueryContent"></div>
+    </div>
+
+
+</body>
+</html>

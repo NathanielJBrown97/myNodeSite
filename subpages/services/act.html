@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT Tutoring</title>
+    <link href="../../css/index.css" type="text/css" rel="stylesheet">
+    <link href="../../css/services.css" type="text/css" rel="stylesheet">
+
+    <!-- Jquery and Related JS, Load at start for latency -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../js/jquery-3.6.0.min.js"><\/script>')</script>
+    <script src="../../js/countdown.js"></script>
+
+</head>
+<body>
+
+
+    <!-- NAVIGATION -->
+    <div class="top-bar">
+        <a href="../../index.html" class="logo"><img src="../../images/LeeTutoringLogoTransparentSmall.webp" alt="Tutoring Company Logo"></a>
+        <div class="countdown" id="SATcountdown">SAT</div>
+        <div class="countdown" id="ACTcountdown">ACT</div>
+        <div class="navigation">
+            <a href="../about.html">About Us</a>
+            <div class="dropdown">
+                <span>Services</span>
+                <div class="dropdown-content">
+                    <a href="act.html">ACT Prep</a>
+                    <a href="sat.html">SAT Prep</a>
+                    <a href="math.html">Math Tutoring</a>
+                    <a href="ap.html">AP Tutoring</a>
+                </div>
+            </div>
+            <a href="../contact.html">Contact</a>
+            <a href="../account/tempNav.html" class="login-button">Login / Sign Up</a>
+        </div>
+    </div>
+
+
+    <!-- ACT PREP SECTION -->
+    <div class="prep-section">
+        <div class="prep-image">
+            
+            <img src="../../images/stock/study-writing.webp" alt="Woman writing in a notebook">
+        </div>
+        <div class="prep-text">
+            <h1>ACT Prep</h1>
+            <p>A successful ACT Prep plan begins by making sure your student is taking the exam that’s right for them.</p>
+        </div>
+    </div>
+
+
+    <!-- TEACH / TESTIMONIALS SECTION  -->
+    <div class="tests-teaching-testimony-section">
+        <div class="subsection tests-text-section">
+            <h2>How We Teach</h2>
+            <p>At Lee Tutoring, we know that most students will perform better on one test over the other. We tailor our exam preparation to your student’s strengths. That means that if we think a student should switch tests, our experts will let them know.</p>
+            <p>With the ACT’s shorter time limits, strategy is key. Our ACT Prep process focuses on time management and budgeting to make sure your student gets all the questions right that they can.</p>
+        </div>
+        <div class="subsection tests-quote-section">
+            <blockquote>“Lee Tutoring supported our daughter to significantly improve her ACT score, all the while making the test prep process an enjoyable experience.”</blockquote>
+            <cite>- Erika S.<br>St. Pete Parent</cite>
+        </div>
+    </div>
+    
+    
+    <!-- DIFFERENCE SECTION -->
+    <div class="difference-section">
+        <h2>What's the Difference?</h2>
+        <p>The ACT takes around the same time as the SAT, and tests students on similar material. Both tests are widely accepted by schools, and scores can be quickly compared across the two exams. However, the ACT is broken up into four sections, compared to the SAT’s three. The ACT combines the SAT’s two Math sections, and adds a Science section. More sections means more opportunities to improve a Superscore – but it also means the timing is tighter. If you or your student has taken the ACT a few times and still aren’t comfortable, it may be time to consider the SAT. <br><br>You can read more about our approach to the SAT <a href="sat.html">Lee Tutoring SAT Prep</a>.</p>
+    </div>
+
+    <!-- WHY ACT PREP SECTION -->
+    <div class="whyprep-section">
+        <h2>What's the Difference?</h2>
+        <p>Students (and our tutors) choose the ACT for a variety of reasons. For students who get a lot of questions right but end up running out of time, strategy goes a long way toward improving their scores. For students interested in STEM, the Science section can showcase their strengths. And for students worried about their schedule, the ACT is offered on a different schedule from the SAT. Above all of these, though, are results. Our ACT Prep tutors will make sure the next test your student takes is right for them. <br><br>To register for an upcoming ACT, click <a href="https://www.act.org/">HERE</a>!</p>
+    </div>
+    
+    <!-- CONTACT FORM -->
+    <div id="contact-header">
+        <h1>Is your student taking the right test?</h1>
+        <h3>We'll help you figure it out.</h3>
+    </div>  
+    <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone">
+            <select id="subject" name="subject">
+                <option value="" disabled selected>Subject Student Is Preparing For</option>
+                <option value="ACT">ACT</option>
+                <option value="SAT">SAT</option>
+                <option value="Math">Math</option>
+                <option value="AP">AP</option>
+                <option value="Other">Other</option>
+            </select>
+            <textarea id="message" name="message" placeholder="Any other information you'd like to share with us?" rows="4"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

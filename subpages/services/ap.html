@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Tutoring</title>
+    <link href="../../css/index.css" type="text/css" rel="stylesheet">
+    <link href="../../css/services.css" type="text/css" rel="stylesheet">
+
+    <!-- Jquery and Related JS, Load at start for latency -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../js/jquery-3.6.0.min.js"><\/script>')</script>
+    <script src="../../js/countdown.js"></script>
+
+</head>
+<body>
+
+
+    <!-- NAVIGATION -->
+    <div class="top-bar">
+        <a href="../../index.html" class="logo"><img src="../../images/LeeTutoringLogoTransparentSmall.webp" alt="Tutoring Company Logo"></a>
+        <div class="countdown" id="SATcountdown">SAT</div>
+        <div class="countdown" id="ACTcountdown">ACT</div>
+        <div class="navigation">
+            <a href="../about.html">About Us</a>
+            <div class="dropdown">
+                <span>Services</span>
+                <div class="dropdown-content">
+                    <a href="act.html">ACT Prep</a>
+                    <a href="sat.html">SAT Prep</a>
+                    <a href="math.html">Math Tutoring</a>
+                    <a href="ap.html">AP Tutoring</a>
+                </div>
+            </div>
+            <a href="../contact.html">Contact</a>
+            <a href="../account/tempNav.html" class="login-button">Login / Sign Up</a>
+        </div>
+    </div>
+
+
+    <!-- PREP SECTION -->
+    <div class="prep-section">
+        <div class="prep-image">
+            
+            <img src="../../images/stock/study-flip.webp" alt="Woman writing in a notebook">
+        </div>
+        <div class="prep-text">
+            <h1>AP Tutoring</h1>
+            <p>AP Classes and Exams carry a big reward: college credit. But that big reward often requires a big commitment. Lee Tutoring is here to help.</p>
+        </div>
+    </div>
+
+
+    <!-- TEACH / TESTIMONIALS SECTION  -->
+    <div class="teaching-testimony-section">
+        <div class="subsection text-section">
+            <h2>Advanced Placement Requires Advanced Tutors</h2>
+            <p>Our AP Tutors are subject matter experts. They have extensively studied the material they’ll be teaching your student (at least at the collegiate level) and know the ins and outs of that subject’s exam. We cover the ten most popular APs, as well as quite a few more, across a broad range of disciplines.</p>
+        </div>
+        <div class="subsection subjects-section">
+            <h2>Courses Covered</h2>
+            <ul>
+                <li>English Language and Composition</li>
+                <li>US History</li>
+                <li>World History</li>
+                <li>US Government and Politics</li>
+                <li>Psychology</li>
+                <li>Calculus AB</li>
+                <li>Calculus BC</li>
+                <li>Human Geography</li>
+                <li>Statistics</li>
+                <li>German</li>
+                <li>Art History</li>
+                <li>European History</li>
+                <li>Computer Science A</li>
+                <li>Computer Science Principles</li>
+                <li>Physics</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <!-- CONTACT FORM -->
+    <div id="contact-header">
+        <h1>Is Your Student Ready for AP Exams?</h1>
+        <h3>Build a solid foundation of specialized knowledge – start today.</h3>
+    </div>  
+    <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone">
+            <select id="subject" name="subject">
+                <option value="" disabled selected>Subject Student Is Preparing For</option>
+                <option value="ACT">ACT</option>
+                <option value="SAT">SAT</option>
+                <option value="Math">Math</option>
+                <option value="AP">AP</option>
+                <option value="Other">Other</option>
+            </select>
+            <textarea id="message" name="message" placeholder="Any other information you'd like to share with us?" rows="4"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
